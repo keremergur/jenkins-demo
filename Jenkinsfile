@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image 'python:3.11-bookworm'
-        }
+        dockerfile true
     }
     stages {
         stage('Run Script') {
